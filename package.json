@@ -1,0 +1,18 @@
+{
+  "name": "ant-multas-scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "popper.js": "^1.16.1",
+    "puppeteer": "^22.6.2"
+  }
+}
