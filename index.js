@@ -16,6 +16,8 @@ app.post('/buscar', async (req, res) => {
 
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
+    // Establecer el user-agent deseado
+    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.3');
 
     await page.goto('https://consultas.atm.gob.ec/PortalWEB/paginas/clientes/clp_criterio_consulta.jsp');
     await page.focus('#ps_placa');
